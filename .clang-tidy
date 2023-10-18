@@ -204,6 +204,5 @@ performance-trivially-destructible,
 readability-container-size-empty,
 '
 HeaderFilterRegex: '^(paddle/(?!cinn)).*$'
-AnalyzeTemporaryDtors: false
 WarningsAsErrors: '*'
 ...
