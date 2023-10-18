@@ -204,6 +204,5 @@ performance-noexcept-move-constructor,
 readability-container-size-empty,
 '
 HeaderFilterRegex: '^(paddle/(?!cinn)).*$'
-AnalyzeTemporaryDtors: false
 WarningsAsErrors: '*'
 ...
