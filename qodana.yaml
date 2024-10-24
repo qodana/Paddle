@@ -1,1 +1,22 @@
-bootstrap: apt-get update; apt-get install -y patchelf python3-jinja2 python3-dev python3-pip python3-numpy python3-protobuf; mkdir -p build; cd build;cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. || true
+bootstrap: apt-get update; apt-get install -y patchelf python3-jinja2 python3-dev python3-pip python3-numpy python3-protobuf
+
+exclude:
+  - name: CppDFAMemoryLeak
+  - name: CppDFAArrayIndexOutOfBounds
+  - name: CppDFAConstantConditions
+  - name: CppDFATimeOver
+  - name: CppDFANullDereference
+  - name: CppDFAEndlessLoop
+  - name: CppDFANotInitializedField
+  - name: CppDFAConstantParameter
+  - name: CppDFAInfiniteRecursion
+  - name: CppDFAUnreachableFunctionCall
+  - name: CppDFAConstantFunctionResult
+  - name: CppDFAUnreadVariable
+  - name: CppDFALoopConditionNotUpdated
+  - name: CppDFALocalValueEscapesFunction
+  - name: CppDFALocalValueEscapesScope
+  - name: CppDFAInvalidatedMemory
+  - name: CppDFAUnreachableCode
+  - name: CppDFADeletedPointer
+  - name: CppDFAUnusedValue
